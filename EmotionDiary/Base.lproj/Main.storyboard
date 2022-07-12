@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -228,6 +229,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backfground" destination="8bC-Xf-vdC" id="bM0-JJ-4Cf"/>
                         <outlet property="test" destination="DnK-jr-J5b" id="zbD-fA-Tw5"/>
                         <outletCollection property="buttonLabels" destination="JKC-X6-2AJ" collectionClass="NSMutableArray" id="5gu-Ay-XbF"/>
                         <outletCollection property="buttonLabels" destination="Wvg-Nc-tuG" collectionClass="NSMutableArray" id="cor-pu-Yc4"/>
@@ -307,7 +309,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VKw-o9-Eai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1428" y="95"/>
+            <point key="canvasLocation" x="1612" y="940"/>
         </scene>
     </scenes>
     <resources>

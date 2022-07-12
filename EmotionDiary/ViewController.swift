@@ -12,13 +12,16 @@ class ViewController: UIViewController {
     
     @IBOutlet var buttonLabels: [UILabel]!
     @IBOutlet weak var test: UILabel!
+    @IBOutlet var backfground: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        backfground.layer.backgroundColor = UIColor.gray.cgColor
+        
         let emotionWords = ["행복해", "사랑해", "좋아해", "당황해", "속상해", "우울해", "심심해", "무력해", "꿀꿇해"]
         
         for (i, word) in zip(buttonLabels, emotionWords) {
-            i.text = word + setEmotionCounting()
+            i.text = word
         
         // 여기에 튜플 써보기
         
@@ -40,13 +43,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func clickButton(_ sender: UIButton) {
-        setEmotionCounting()
+        for i in buttonLabels {
+            i.text = (i.text ?? "감정이 없습니다") + String(setEmotionCounting())
+        }
     }
     
-    func setEmotionCounting() -> String {
+    func setEmotionCounting() -> Int {
         var clickedNumber = 0
         clickedNumber += 1
-        return String(clickedNumber)
+        return clickedNumber
     }
     
     //배경색, 레이블, 이미지
