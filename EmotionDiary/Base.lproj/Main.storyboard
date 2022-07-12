@@ -28,7 +28,6 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="sesac_slime2"/>
                                         <connections>
-                                            <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nzL-cX-xcb"/>
                                             <action selector="emotionalButtonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j2c-Qf-rUA"/>
                                         </connections>
                                     </button>
@@ -46,7 +45,6 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="sesac_slime5"/>
                                         <connections>
-                                            <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DhG-q9-96L"/>
                                             <action selector="emotionalButtonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FpH-dd-JL4"/>
                                         </connections>
                                     </button>
@@ -64,7 +62,6 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="sesac_slime8"/>
                                         <connections>
-                                            <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pMI-Lx-YXE"/>
                                             <action selector="emotionalButtonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8gO-TF-bnA"/>
                                         </connections>
                                     </button>
@@ -87,7 +84,6 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="sesac_slime1"/>
                                         <connections>
-                                            <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RY7-MR-vEa"/>
                                             <action selector="emotionalButtonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="78m-10-zLJ"/>
                                         </connections>
                                     </button>
@@ -105,7 +101,6 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="sesac_slime4"/>
                                         <connections>
-                                            <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CQD-NM-KaM"/>
                                             <action selector="emotionalButtonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oiV-b4-SFD"/>
                                         </connections>
                                     </button>
@@ -123,7 +118,6 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="sesac_slime7"/>
                                         <connections>
-                                            <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BSA-lF-Hgp"/>
                                             <action selector="emotionalButtonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fVI-dI-ada"/>
                                         </connections>
                                     </button>
@@ -149,7 +143,6 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="sesac_slime3"/>
                                         <connections>
-                                            <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fE9-C6-w8U"/>
                                             <action selector="emotionalButtonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Wl-4a-gUv"/>
                                         </connections>
                                     </button>
@@ -167,7 +160,6 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="sesac_slime6"/>
                                         <connections>
-                                            <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uJV-9U-3gh"/>
                                             <action selector="emotionalButtonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VuJ-0a-6Dc"/>
                                         </connections>
                                     </button>
@@ -239,7 +231,6 @@
                     </view>
                     <connections>
                         <outlet property="background" destination="8bC-Xf-vdC" id="bM0-JJ-4Cf"/>
-                        <outlet property="test" destination="DnK-jr-J5b" id="zbD-fA-Tw5"/>
                         <outletCollection property="buttonLabels" destination="JKC-X6-2AJ" collectionClass="NSMutableArray" id="5gu-Ay-XbF"/>
                         <outletCollection property="buttonLabels" destination="Wvg-Nc-tuG" collectionClass="NSMutableArray" id="cor-pu-Yc4"/>
                         <outletCollection property="buttonLabels" destination="DnK-jr-J5b" collectionClass="NSMutableArray" id="RN0-nP-S5P"/>

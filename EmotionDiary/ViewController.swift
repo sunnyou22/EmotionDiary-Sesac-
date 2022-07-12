@@ -8,51 +8,58 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+    let emotionWords = ["행복해", "사랑해", "좋아해", "당황해", "속상해", "우울해", "심심해", "무력해", "꿀꿀해"]
+    var emotionArray = [0,0,0,0,0,0,0,0,0]
     
     @IBOutlet var buttonLabels: [UILabel]!
-    @IBOutlet weak var test: UILabel!
     @IBOutlet var background: UIView!
     @IBOutlet var buttonImage: [UIButton]!
     
-    var emotionArray = [0,0,0,0,0,0,0,0,0]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-//        for i in 1...9 {
-//            inputImage(number: i)
-//        }
+        background.backgroundColor = UIColor.yellow
         
+        //MARK: tag 추가
+        for i in 0...8 {
+            buttonImage[i].tag = i
+        }
+        
+        //MARK: Image 추가 및 레이블 설정
         inputImage()
+        
+        // 이전 실험 코드
+        //        for i in 1...9 {
+        //            inputImage(number: i)
+        //        }
+        
+        //    func inputImage(number: Int) {
+        //        let image = UIImage(named: "sesac_slime\(number)")
+        //
+        //        for button in buttonImage {
+        //            button.setImage(image, for: .normal)
+        //        }
+        //    }
     }
     
+    //MARK: 클릭 시 1. 버튼 설정 단어로 초기화 2. 클릭횟수 옆에 붙여주기
+    @IBAction func emotionalButtonCliked(_ sender: UIButton) {
+        buttonLabels[sender.tag].text! = emotionWords[sender.tag]
+        emotionArray[sender.tag] += 1
+        buttonLabels[sender.tag].text! += String(emotionArray[buttonImage[sender.tag].tag])
+    }
     
-//    func inputImage(number: Int) {
-//        let image = UIImage(named: "sesac_slime\(number)")
-//
-//        for button in buttonImage {
-//            button.setImage(image, for: .normal)
-//        }
-//    }
-    
+    //MARK: 버튼 Image 구성
     func inputImage() {
-        let emotionWords = ["행복해", "사랑해", "좋아해", "당황해", "속상해", "우울해", "심심해", "무력해", "꿀꿀해"]
-        
         for (i, word) in zip(0...8, emotionWords) {
             let image = UIImage(named: "sesac_slime\(i + 1)")
             buttonImage[i].setImage(image, for: .normal)
             buttonLabels[i].text = word
         }
     }
-    
-    @IBAction func emotionalButtonCliked(_ sender: UIButton) {
-        emotionArray[sender.tag] += 1
-        //
-        //        for buttonLabel in buttonLabels {
-        //        buttonLabel.text = "\(emotionArray[0])"
-        //        }
-    }
+    //
+    //        for buttonLabel in buttonLabels {
+    //        buttonLabel.text = "\(emotionArray[0])"
+    //        }
 }
 //MARK: - 수업 및 내 감정일기 코드
 
@@ -78,7 +85,6 @@ class ViewController: UIViewController {
 //        // 아래코드 주석처리하면 코드가 나옴
 //        //        let literal = #imageLiteral()
 //        //        let colrLiteral = #colorLiteral()
-//
 //    }
 //    }
 //
