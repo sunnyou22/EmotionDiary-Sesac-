@@ -13,29 +13,49 @@ class ViewController: UIViewController {
     @IBOutlet var buttonLabels: [UILabel]!
     @IBOutlet weak var test: UILabel!
     @IBOutlet var background: UIView!
+    @IBOutlet var buttonImage: [UIButton]!
     
     var emotionArray = [0,0,0,0,0,0,0,0,0]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let tag = 0...8
+      
+//        for i in 1...9 {
+//            inputImage(number: i)
+//        }
         
-        for (tag, button) in zip(tag, buttonLabels) {
-            button.tag = tag
+        inputImage()
+    }
+    
+    
+//    func inputImage(number: Int) {
+//        let image = UIImage(named: "sesac_slime\(number)")
+//
+//        for button in buttonImage {
+//            button.setImage(image, for: .normal)
+//        }
+//    }
+    
+    func inputImage() {
+        let emotionWords = ["행복해", "사랑해", "좋아해", "당황해", "속상해", "우울해", "심심해", "무력해", "꿀꿀해"]
+        
+        for (i, word) in zip(0...8, emotionWords) {
+            let image = UIImage(named: "sesac_slime\(i + 1)")
+            buttonImage[i].setImage(image, for: .normal)
+            buttonLabels[i].text = word
         }
-        
     }
     
     @IBAction func emotionalButtonCliked(_ sender: UIButton) {
         emotionArray[sender.tag] += 1
-//        
-//        for buttonLabel in buttonLabels {
-//        buttonLabel.text = "\(emotionArray[0])"
-//        }
+        //
+        //        for buttonLabel in buttonLabels {
+        //        buttonLabel.text = "\(emotionArray[0])"
+        //        }
     }
 }
-        //MARK: - 수업 및 내 감정일기 코드
-        
+//MARK: - 수업 및 내 감정일기 코드
+
 //        background.layer.backgroundColor = UIColor.gray.cgColor
 //
 //        let emotionWords = ["행복해", "사랑해", "좋아해", "당황해", "속상해", "우울해", "심심해", "무력해", "꿀꿇해"]

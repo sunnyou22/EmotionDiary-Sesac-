@@ -249,6 +249,15 @@
                         <outletCollection property="buttonLabels" destination="iI7-AP-0Vl" collectionClass="NSMutableArray" id="6bd-uh-wO7"/>
                         <outletCollection property="buttonLabels" destination="Kz9-ff-5sE" collectionClass="NSMutableArray" id="S4D-Wg-adV"/>
                         <outletCollection property="buttonLabels" destination="C4S-T8-RK7" collectionClass="NSMutableArray" id="rQB-ir-uac"/>
+                        <outletCollection property="buttonImage" destination="vBq-GY-N4m" collectionClass="NSMutableArray" id="T3X-Ei-ceF"/>
+                        <outletCollection property="buttonImage" destination="DPl-NY-pJ0" collectionClass="NSMutableArray" id="Szc-BQ-ROB"/>
+                        <outletCollection property="buttonImage" destination="mfg-Q1-V8W" collectionClass="NSMutableArray" id="BKr-mv-7FQ"/>
+                        <outletCollection property="buttonImage" destination="eCi-Jr-6Ee" collectionClass="NSMutableArray" id="MNb-l5-gwR"/>
+                        <outletCollection property="buttonImage" destination="KTH-xa-Zsh" collectionClass="NSMutableArray" id="VWe-CN-P53"/>
+                        <outletCollection property="buttonImage" destination="NCX-ap-uVA" collectionClass="NSMutableArray" id="Bhl-8E-T0u"/>
+                        <outletCollection property="buttonImage" destination="3up-lT-3tw" collectionClass="NSMutableArray" id="rO7-gL-6JU"/>
+                        <outletCollection property="buttonImage" destination="nMl-zX-wcq" collectionClass="NSMutableArray" id="RKa-qL-eqW"/>
+                        <outletCollection property="buttonImage" destination="zxu-PA-Vl8" collectionClass="NSMutableArray" id="inq-Gl-9dj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
