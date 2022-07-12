@@ -13,6 +13,7 @@
 		90D4379D287CF542006436DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90D4379B287CF542006436DA /* Main.storyboard */; };
 		90D4379F287CF544006436DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90D4379E287CF544006436DA /* Assets.xcassets */; };
 		90D437A2287CF544006436DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90D437A0287CF544006436DA /* LaunchScreen.storyboard */; };
+		90D437AA287D21B4006436DA /* SegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D437A9287D21B4006436DA /* SegmentedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		90D4379E287CF544006436DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90D437A1287CF544006436DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90D437A3287CF544006436DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90D437A9287D21B4006436DA /* SegmentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				90D43797287CF542006436DA /* SceneDelegate.swift */,
 				90D43799287CF542006436DA /* ViewController.swift */,
 				90D4379B287CF542006436DA /* Main.storyboard */,
+				90D437A9287D21B4006436DA /* SegmentedViewController.swift */,
 				90D4379E287CF544006436DA /* Assets.xcassets */,
 				90D437A0287CF544006436DA /* LaunchScreen.storyboard */,
 				90D437A3287CF544006436DA /* Info.plist */,
@@ -141,6 +144,7 @@
 				90D4379A287CF542006436DA /* ViewController.swift in Sources */,
 				90D43796287CF542006436DA /* AppDelegate.swift in Sources */,
 				90D43798287CF542006436DA /* SceneDelegate.swift in Sources */,
+				90D437AA287D21B4006436DA /* SegmentedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
