@@ -29,6 +29,7 @@
                                         <state key="normal" image="sesac_slime2"/>
                                         <connections>
                                             <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nzL-cX-xcb"/>
+                                            <action selector="emotionalButtonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j2c-Qf-rUA"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wvg-Nc-tuG">
@@ -46,6 +47,7 @@
                                         <state key="normal" image="sesac_slime5"/>
                                         <connections>
                                             <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DhG-q9-96L"/>
+                                            <action selector="emotionalButtonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FpH-dd-JL4"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szb-jj-tri">
@@ -63,6 +65,7 @@
                                         <state key="normal" image="sesac_slime8"/>
                                         <connections>
                                             <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pMI-Lx-YXE"/>
+                                            <action selector="emotionalButtonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8gO-TF-bnA"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kz9-ff-5sE">
@@ -85,6 +88,7 @@
                                         <state key="normal" image="sesac_slime1"/>
                                         <connections>
                                             <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RY7-MR-vEa"/>
+                                            <action selector="emotionalButtonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="78m-10-zLJ"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKC-X6-2AJ">
@@ -102,6 +106,7 @@
                                         <state key="normal" image="sesac_slime4"/>
                                         <connections>
                                             <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CQD-NM-KaM"/>
+                                            <action selector="emotionalButtonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oiV-b4-SFD"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WX-cc-oYp">
@@ -119,6 +124,7 @@
                                         <state key="normal" image="sesac_slime7"/>
                                         <connections>
                                             <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BSA-lF-Hgp"/>
+                                            <action selector="emotionalButtonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fVI-dI-ada"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iI7-AP-0Vl">
@@ -144,6 +150,7 @@
                                         <state key="normal" image="sesac_slime3"/>
                                         <connections>
                                             <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fE9-C6-w8U"/>
+                                            <action selector="emotionalButtonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Wl-4a-gUv"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" text="ㅇㅇㅇ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DnK-jr-J5b">
@@ -161,6 +168,7 @@
                                         <state key="normal" image="sesac_slime6"/>
                                         <connections>
                                             <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uJV-9U-3gh"/>
+                                            <action selector="emotionalButtonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VuJ-0a-6Dc"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uH-Mn-3aa">
@@ -178,6 +186,7 @@
                                         <state key="normal" image="sesac_slime9"/>
                                         <connections>
                                             <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pqD-4G-m5v"/>
+                                            <action selector="emotionalButtonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bD5-ew-AlY"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4S-T8-RK7">
@@ -229,7 +238,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backfground" destination="8bC-Xf-vdC" id="bM0-JJ-4Cf"/>
+                        <outlet property="background" destination="8bC-Xf-vdC" id="bM0-JJ-4Cf"/>
                         <outlet property="test" destination="DnK-jr-J5b" id="zbD-fA-Tw5"/>
                         <outletCollection property="buttonLabels" destination="JKC-X6-2AJ" collectionClass="NSMutableArray" id="5gu-Ay-XbF"/>
                         <outletCollection property="buttonLabels" destination="Wvg-Nc-tuG" collectionClass="NSMutableArray" id="cor-pu-Yc4"/>
