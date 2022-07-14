@@ -255,10 +255,10 @@
             </objects>
             <point key="canvasLocation" x="313.04347826086956" y="44.866071428571423"/>
         </scene>
-        <!--View Controller-->
+        <!--Library Test View Controller-->
         <scene sceneID="3Fw-uA-WfE">
             <objects>
-                <viewController id="kpY-fb-bop" sceneMemberID="viewController">
+                <viewController id="kpY-fb-bop" customClass="LibraryTestViewController" customModule="EmotionDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e3s-IL-Z4x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -300,12 +300,23 @@
                                     <segue destination="fr6-Fy-PJz" kind="presentation" id="eYr-EY-uig"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xns-BN-NEf">
+                                <rect key="frame" x="20" y="728" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="VAX-p7-bOx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="f23-ga-AK6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="xns-BN-NEf" firstAttribute="leading" secondItem="f23-ga-AK6" secondAttribute="leading" constant="20" id="1C7-Ft-2O1"/>
                             <constraint firstItem="YtX-eY-VxC" firstAttribute="top" secondItem="f23-ga-AK6" secondAttribute="top" constant="20" id="4H8-Xb-8lS"/>
                             <constraint firstItem="FOp-mn-P6e" firstAttribute="leading" secondItem="f23-ga-AK6" secondAttribute="leading" constant="20" id="5Is-YX-ZAQ"/>
+                            <constraint firstItem="f23-ga-AK6" firstAttribute="bottom" secondItem="xns-BN-NEf" secondAttribute="bottom" constant="100" id="PSY-xP-L1M"/>
+                            <constraint firstItem="f23-ga-AK6" firstAttribute="trailing" secondItem="xns-BN-NEf" secondAttribute="trailing" constant="20" id="UQg-YF-zWX"/>
                             <constraint firstItem="YtX-eY-VxC" firstAttribute="leading" secondItem="f23-ga-AK6" secondAttribute="leading" constant="20" id="bDG-Ax-oAE"/>
                             <constraint firstItem="Zxe-g9-ugt" firstAttribute="centerY" secondItem="e3s-IL-Z4x" secondAttribute="centerY" id="fgP-xS-rPy"/>
                             <constraint firstItem="f23-ga-AK6" firstAttribute="trailing" secondItem="YtX-eY-VxC" secondAttribute="trailing" constant="20" id="hqL-GT-zv1"/>
