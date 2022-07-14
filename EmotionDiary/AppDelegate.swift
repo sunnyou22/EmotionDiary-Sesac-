@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import IQKeyboardManagerSwift // 설치한 라이브러리이름을 따라가는 경우가 많음
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
