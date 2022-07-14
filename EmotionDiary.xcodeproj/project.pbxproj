@@ -11,6 +11,7 @@
 		907AF106287FAFE800ED31AF /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 907AF105287FAFE800ED31AF /* FSCalendar */; };
 		907AF109287FB01D00ED31AF /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = 907AF108287FB01D00ED31AF /* TextFieldEffects */; };
 		907AF10C287FBE4500ED31AF /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 907AF10B287FBE4500ED31AF /* IQKeyboardManagerSwift */; };
+		907AF10E287FC2C300ED31AF /* LibraryTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907AF10D287FC2C300ED31AF /* LibraryTestViewController.swift */; };
 		90D43796287CF542006436DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D43795287CF542006436DA /* AppDelegate.swift */; };
 		90D43798287CF542006436DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D43797287CF542006436DA /* SceneDelegate.swift */; };
 		90D4379A287CF542006436DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D43799287CF542006436DA /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		907AF10D287FC2C300ED31AF /* LibraryTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTestViewController.swift; sourceTree = "<group>"; };
 		90D43792287CF542006436DA /* EmotionDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D43795287CF542006436DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90D43797287CF542006436DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				90D43797287CF542006436DA /* SceneDelegate.swift */,
 				90D43799287CF542006436DA /* ViewController.swift */,
 				90D4379B287CF542006436DA /* Main.storyboard */,
+				907AF10D287FC2C300ED31AF /* LibraryTestViewController.swift */,
 				90D437A9287D21B4006436DA /* SegmentedViewController.swift */,
 				90D4379E287CF544006436DA /* Assets.xcassets */,
 				90D437A0287CF544006436DA /* LaunchScreen.storyboard */,
@@ -161,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				907AF10E287FC2C300ED31AF /* LibraryTestViewController.swift in Sources */,
 				90D4379A287CF542006436DA /* ViewController.swift in Sources */,
 				90D43796287CF542006436DA /* AppDelegate.swift in Sources */,
 				90D43798287CF542006436DA /* SceneDelegate.swift in Sources */,
