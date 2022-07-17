@@ -52,10 +52,24 @@ class ViewController: UIViewController {
         */
         
         //MARK: 멘토님이 도와주신 코드..유레카...
-        emotionArray[sender.tag] += 1
-        buttonLabels[sender.tag].text = "\(emotionWords[sender.tag])"  + "\(emotionArray[sender.tag])" //
+//        emotionArray[sender.tag] += 1
+//        buttonLabels[sender.tag].text = "\(emotionWords[sender.tag])"  + "\(emotionArray[sender.tag])"
         
+        //MARK: userDefaults 사용해보기
+        /*
+         1. 기존값을 불러온다.
+         2. 새로운 값을 저장한다.
+         3. 새로운 값을 불러온다.
+         */
         
+        //1.
+        let currentValue = UserDefaults.standard.integer(forKey: "emotionClickedCount\([sender.tag])")
+        //2.
+        let updateValus = currentValue + 1
+        //3.
+        UserDefaults.standard.set(updateValus, forKey: "emotionClickedCount\([sender.tag])")
+        
+        buttonLabels[sender.tag].text = "\(emotionWords[sender.tag])" + "\(UserDefaults.standard.integer(forKey: "emotionClickedCount\([sender.tag])"))"
     }
     
     //MARK: 버튼 Image 구성
@@ -149,4 +163,3 @@ class ViewController: UIViewController {
 //        present(alert, animated: true, completion: nil) // completion은 내부적으로 처리하기 위해
 //    }
 //}
-//
