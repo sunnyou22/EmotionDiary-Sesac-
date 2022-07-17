@@ -232,6 +232,14 @@
                                     </preferredSymbolConfiguration>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X77-Gv-Kof">
+                                <rect key="frame" x="116" y="782" width="182" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XW1-KW-2KC"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="ㅇㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹ"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -239,10 +247,12 @@
                             <constraint firstItem="dZS-XF-516" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="2vI-62-n9p"/>
                             <constraint firstItem="f4P-7a-pF3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.25" id="3BJ-Z0-4UT"/>
                             <constraint firstItem="dZS-XF-516" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Xa-ba-yZl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="X77-Gv-Kof" secondAttribute="bottom" constant="30" id="9QU-Sl-7c2"/>
                             <constraint firstItem="f4P-7a-pF3" firstAttribute="top" secondItem="nDw-jM-7s6" secondAttribute="top" id="ABj-Pd-hWn"/>
                             <constraint firstItem="Yhx-SN-tNB" firstAttribute="width" secondItem="f4P-7a-pF3" secondAttribute="width" id="HC6-we-Jpi"/>
                             <constraint firstItem="f4P-7a-pF3" firstAttribute="leading" secondItem="nDw-jM-7s6" secondAttribute="trailing" constant="20" id="MGF-zd-feR"/>
                             <constraint firstItem="vBq-GY-N4m" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.25" id="MbM-7s-mAc"/>
+                            <constraint firstItem="X77-Gv-Kof" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SGq-cb-wIJ"/>
                             <constraint firstItem="yCf-lV-EjE" firstAttribute="centerY" secondItem="dZS-XF-516" secondAttribute="centerY" id="VDB-YB-cd7"/>
                             <constraint firstItem="Yhx-SN-tNB" firstAttribute="leading" secondItem="f4P-7a-pF3" secondAttribute="trailing" constant="20" id="Zs1-Fe-FSA"/>
                             <constraint firstItem="f4P-7a-pF3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dwB-4b-M1t"/>
@@ -254,6 +264,7 @@
                     </view>
                     <connections>
                         <outlet property="background" destination="8bC-Xf-vdC" id="bM0-JJ-4Cf"/>
+                        <outlet property="emotionCountReset" destination="X77-Gv-Kof" id="VpI-Da-AG6"/>
                         <outletCollection property="buttonLabels" destination="JKC-X6-2AJ" collectionClass="NSMutableArray" id="5gu-Ay-XbF"/>
                         <outletCollection property="buttonLabels" destination="Wvg-Nc-tuG" collectionClass="NSMutableArray" id="cor-pu-Yc4"/>
                         <outletCollection property="buttonLabels" destination="DnK-jr-J5b" collectionClass="NSMutableArray" id="RN0-nP-S5P"/>
@@ -276,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="304" y="40"/>
+            <point key="canvasLocation" x="302.89855072463769" y="39.508928571428569"/>
         </scene>
         <!--Library Test View Controller-->
         <scene sceneID="3Fw-uA-WfE">
