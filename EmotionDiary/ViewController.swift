@@ -19,13 +19,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         background.backgroundColor = UIColor.yellow
         
-        //MARK: tag 추가
-        for i in 0...8 {
-            buttonImage[i].tag = i
-        }
-        
-        //MARK: Image 추가 및 레이블 설정
+        //MARK: Image 추가 및 tag 추가
+//        inputImage(buttonList: buttonImage)
         inputImage()
+        
+        
+                
         
         // 이전 실험 코드
         //        for i in 1...9 {
@@ -60,6 +59,7 @@ class ViewController: UIViewController {
          1. 기존값을 불러온다.
          2. 새로운 값을 저장한다.
          3. 새로운 값을 불러온다.
+         4. 텍스트 필드에 할당해준다
          */
         
         //1.
@@ -68,24 +68,34 @@ class ViewController: UIViewController {
         let updateValus = currentValue + 1
         //3.
         UserDefaults.standard.set(updateValus, forKey: "emotionClickedCount\([sender.tag])")
-        
-        buttonLabels[sender.tag].text = "\(emotionWords[sender.tag])" + "\(UserDefaults.standard.integer(forKey: "emotionClickedCount\([sender.tag])"))"
-    }
+        //4.
+        buttonLabels[sender.tag].text = "\(emotionWords[sender.tag])\(UserDefaults.standard.integer(forKey: "emotionClickedCount\([sender.tag])"))"
     
+    }
+
     //MARK: 버튼 Image 구성
     func inputImage() {
-        for (i, word) in zip(0...8, emotionWords) {
+        for i in 0...8 {
+            buttonImage[i].tag = i
+            buttonImage[buttonImage[i].tag].setImage(UIImage(named: "sesac_slime\(i + 1)"), for: .normal)
             
-            let image = UIImage(named: "sesac_slime\(i + 1)")
-            buttonImage[i].setImage(image, for: .normal)
-            buttonLabels[i].text = word
+            buttonLabels[i].text = "\(emotionWords[i])\(UserDefaults.standard.integer(forKey: "emotionClickedCount\([i])"))"
         }
+        /*  -> userDefault를 지정해줘서 쓸 수 없는 코드
+          for (i, word) in zip(0...8, emotionWords) {
+             
+             let image = UIImage(named: "sesac_slime\(i + 1)")
+             buttonImage[i].setImage(image, for: .normal)
+             buttonLabels[i].text = word
+         }
+ */
+      
     }
     //
     //        for buttonLabel in buttonLabels {
     //        buttonLabel.text = "\(emotionArray[0])"
     //        }
-}
+
 //MARK: - 수업 및 내 감정일기 코드
 
 //        background.layer.backgroundColor = UIColor.gray.cgColor
@@ -162,4 +172,4 @@ class ViewController: UIViewController {
 //        //4. present
 //        present(alert, animated: true, completion: nil) // completion은 내부적으로 처리하기 위해
 //    }
-//}
+}
