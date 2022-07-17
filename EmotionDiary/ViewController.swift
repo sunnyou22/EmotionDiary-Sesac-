@@ -52,6 +52,7 @@ class ViewController: UIViewController {
         //        inputImage(buttonList: buttonImage)
         inputImage()
         
+        //MARK: 마음비우기 버튼 UI
         emotionCountReset.setTitle("마음비우기", for: .normal)
         emotionCountReset.setTitleColor(.black, for: .normal)
         emotionCountReset.layer.backgroundColor = UIColor.lightGray.cgColor
@@ -106,7 +107,16 @@ class ViewController: UIViewController {
         UserDefaults.standard.set(updateValus, forKey: "emotionClickedCount\([sender.tag])")
         //4.
         buttonLabels[sender.tag].text = "\(emotionWords[sender.tag])\(UserDefaults.standard.integer(forKey: "emotionClickedCount\([sender.tag])"))"
-        
+    }
+    
+    //MARK: 마음 비우기 버튼 로직
+    @IBAction func emotionResetBtnClick(_ sender: UIButton) {
+        for i in 0...8 {
+            // 각 버튼마다 값을 지워주고 -> 기본값 반환 Int는 0
+            UserDefaults.standard.removeObject(forKey: "emotionClickedCount\([i])")
+            // 변경된 값을 넣어주기
+            buttonLabels[i].text = "\(emotionWords[i])\(UserDefaults.standard.integer(forKey: "emotionClickedCount\([i])"))"
+        }
     }
     
     //MARK: 버튼 Image 구성

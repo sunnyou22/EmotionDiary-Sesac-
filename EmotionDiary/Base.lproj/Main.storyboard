@@ -233,12 +233,15 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X77-Gv-Kof">
-                                <rect key="frame" x="116" y="782" width="182" height="50"/>
+                                <rect key="frame" x="161.5" y="782" width="91" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="XW1-KW-2KC"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="ㅇㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹ"/>
+                                <state key="normal" title="마음비우기버튼"/>
+                                <connections>
+                                    <action selector="emotionResetBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZE-WU-ZcJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
