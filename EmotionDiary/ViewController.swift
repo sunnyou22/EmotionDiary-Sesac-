@@ -111,12 +111,7 @@ class ViewController: UIViewController {
     
     //MARK: 마음 비우기 버튼 로직
     @IBAction func emotionResetBtnClick(_ sender: UIButton) {
-        for i in 0...8 {
-            // 각 버튼마다 값을 지워주고 -> 기본값 반환 Int는 0
-            UserDefaults.standard.removeObject(forKey: "emotionClickedCount\([i])")
-            // 변경된 값을 넣어주기
-            buttonLabels[i].text = "\(emotionWords[i])\(UserDefaults.standard.integer(forKey: "emotionClickedCount\([i])"))"
-        }
+       showAlert(title: "마음 비우기", message: "마음을 정말 정리하시겠습까?")
     }
     
     //MARK: 버튼 Image 구성
@@ -142,6 +137,22 @@ class ViewController: UIViewController {
     //        buttonLabel.text = "\(emotionArray[0])"
     //        }
     
+    //MARK: - Alert 추가(새싹님 코드 참고)
+    func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let ok = UIAlertAction(title: "네", style: .destructive) { (_) in
+            for i in 0...8 {
+                // 각 버튼마다 값을 지워주고 -> 기본값 반환 Int는 0
+                UserDefaults.standard.removeObject(forKey: "emotionClickedCount\([i])")
+                // 변경된 값을 넣어주기
+                self.buttonLabels[i].text = "\(self.emotionWords[i])\(UserDefaults.standard.integer(forKey: "emotionClickedCount\([i])"))"
+            }
+            }
+        alert.addAction(ok)
+        present(alert, animated: true, completion: .none)
+        
+    }
+    
     //MARK: - 수업 및 내 감정일기 코드
     
     //        background.layer.backgroundColor = UIColor.gray.cgColor
@@ -158,7 +169,7 @@ class ViewController: UIViewController {
     //
     //        // 시스템 심볼 쓰기
     //        // 내 이미지를 쓰려며는 named로 하는 것
-    //        //        let systemImage = UIImage(systemName: <#T##String#>)
+    //        //        let systemImage = UIImage(systemName: T##String)
     //
     //        // 이게 Literal로 이미지 색 넣는 법
     //        // #imageLiteral(
