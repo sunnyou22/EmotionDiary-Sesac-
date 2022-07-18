@@ -137,7 +137,7 @@ class ViewController: UIViewController {
     //        buttonLabel.text = "\(emotionArray[0])"
     //        }
     
-    //MARK: - Alert 추가(새싹님 코드 참고)
+    //MARK: - Alert 추가(새싹님 코드 참고 wow 및 ok 버튼을 눌렀을 때 리셋되도록 리팩톨)
     func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let ok = UIAlertAction(title: "네", style: .destructive, handler: { (_) in
@@ -148,6 +148,7 @@ class ViewController: UIViewController {
                 self.buttonLabels[i].text = "\(self.emotionWords[i])\(UserDefaults.standard.integer(forKey: "emotionClickedCount\([i])"))"
             }
         })
+        
         alert.addAction(ok)
         present(alert, animated: true, completion: .none)
         
